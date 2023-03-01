@@ -1,0 +1,34 @@
+@import "./helpers/mixins.scss";
+@import "./helpers/helpers.scss";
+
+:root {
+    --side-padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-size-adjust: none;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+}
+
+img[data-src] {
+    visibility: hidden;
+}
+
+a,
+button {
+    transition: all 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
