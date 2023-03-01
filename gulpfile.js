@@ -1,8 +1,3 @@
-/*
-TODO LIST:
-- вынести pagelist в отдельный подключаемый скрипт
-*/
-
 "use strict";
 
 const fs = require("fs");
