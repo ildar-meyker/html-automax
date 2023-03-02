@@ -2,7 +2,7 @@
 @import "./helpers/helpers.scss";
 
 :root {
-    --side-padding: 20px;
+    --side-padding: 12rem;
 }
 
 * {
@@ -48,3 +48,5 @@ a {
 @import "./blocks/footer.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav-top.scss";
+@import "./blocks/about.scss";
+@import "./blocks/article.scss";

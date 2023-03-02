@@ -1,2 +1,31 @@
 .goods {
+    padding-bottom: 13.8rem;
+    padding-top: 2.5rem;
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left,
+    &__right {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    &__left {
+        padding-right: 3rem;
+    }
+
+    &__right {
+        padding-left: 2.3rem;
+    }
+
+    &__image {
+        margin-left: -11.3rem;
+    }
+
+    &__desc {
+        padding-top: 1.6rem;
+    }
 }

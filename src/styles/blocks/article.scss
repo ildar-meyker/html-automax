@@ -1,0 +1,15 @@
+.article {
+    font-size: 2rem;
+    line-height: 1.4;
+
+    ul {
+        list-style: outside disc;
+        padding-left: 3rem;
+
+        li {
+            margin: 2.3rem 0;
+
+            @include reset-margins;
+        }
+    }
+}

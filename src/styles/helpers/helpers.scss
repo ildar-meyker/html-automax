@@ -85,3 +85,12 @@
         right: 0;
     }
 }
+
+.image-box {
+    position: relative;
+
+    img {
+        @include fill;
+        object-fit: contain;
+    }
+}

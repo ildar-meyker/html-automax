@@ -1,0 +1,25 @@
+.about {
+    position: relative;
+    background: linear-gradient(90deg, #000000 0%, #434343 100%);
+    padding-top: 6.8rem;
+    padding-bottom: 14rem;
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left,
+    &__right {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    &__right {
+        padding-left: 4.2rem;
+    }
+
+    &__image {
+        margin-right: -1.8rem;
+    }
+}
