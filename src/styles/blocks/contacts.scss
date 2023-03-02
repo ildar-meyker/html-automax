@@ -1,2 +1,12 @@
 .contacts {
+    background: #fff;
+    padding-top: 12.6rem;
+    padding-bottom: 15.3rem;
+
+    &__desc {
+        margin-top: 4.9rem;
+        font-size: 2.5rem;
+        line-height: 1.52;
+        text-align: center;
+    }
 }

@@ -9,9 +9,16 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: clamp(7px, 0.7vw, 10px);
+}
+
 body {
     text-size-adjust: none;
     min-width: 320px;
+    background: #fff;
+    font-family: "Arial", sans-serif;
+    color: #000;
 }
 
 img {
