@@ -1,2 +1,25 @@
 .nav-top {
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        margin: 0 6rem;
+
+        &.active,
+        &:hover {
+            a {
+                color: #fe9149;
+            }
+        }
+    }
+
+    a {
+        font-family: "Arial Black";
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: calc(28 / 20);
+        color: #ffffff;
+    }
 }

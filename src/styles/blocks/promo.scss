@@ -1,0 +1,31 @@
+.promo {
+    padding-bottom: 20rem;
+    padding-top: 22rem;
+    background: url(../img/promo/1.jpeg) no-repeat 100% 50% / auto 100%;
+    text-align: center;
+
+    &__header {
+    }
+
+    &__logo {
+        position: relative;
+        max-width: 54.6rem;
+        display: block;
+        margin: 0 auto;
+
+        &:before {
+            content: " ";
+            padding-top: calc(124 / 546 * 100%);
+            display: block;
+        }
+
+        img {
+            @include fill;
+            object-fit: cover;
+        }
+    }
+
+    &__desc {
+        margin-top: 12rem;
+    }
+}
