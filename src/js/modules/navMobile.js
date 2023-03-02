@@ -1,13 +1,17 @@
 function open() {
     $("#nav-mobile, .js-nav-mobile-open").addClass("active");
+    $("body").addClass("page__locked");
 }
 
 function toggle() {
-    $("#nav-mobile, .js-nav-mobile-open").toggleClass("active");
+    const isActive = $("#nav-mobile").hasClass("active");
+    isActive ? close() : open();
 }
 
 function close() {
     $("#nav-mobile, .js-nav-mobile-open").removeClass("active");
+    $("body").removeClass("page__locked");
+    console.log(1);
 }
 
 $(function () {

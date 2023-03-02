@@ -1,4 +1,8 @@
 .page {
+    &__locked {
+        overflow: hidden;
+    }
+
     &__center {
         padding: 0 var(--side-padding);
         box-sizing: content-box;

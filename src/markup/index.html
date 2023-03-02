@@ -192,22 +192,24 @@
     <!-- /footer -->
 
     <!--  nav-mobile -->
-    <section class="nav-mobile">
-        <nav class="nav-mobile__links">
-            <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Продукция</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
+    <section class="nav-mobile" id="nav-mobile">
+        <div class="nav-mobile__window">
+            <nav class="nav-mobile__links">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
 
-        <div class="nav-mobile__btn">
-            <a href="#" class="btn-arrow"> Реквизиты </a>
+            <div class="nav-mobile__btn-arrow">
+                <a href="#" class="btn-arrow"> Реквизиты </a>
+            </div>
         </div>
 
-        <button class="nav-mobile__btn-close">
+        <button class="nav-mobile__btn-close js-nav-mobile-close">
             <svg class="icon">
-                <use xlink:href="#close"></use>
+                <use xlink:href="img/sprite.svg#close"></use>
             </svg>
         </button>
     </section>

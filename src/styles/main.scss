@@ -48,6 +48,13 @@ a {
 @import "./blocks/footer.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav-top.scss";
+@import "./blocks/nav-mobile.scss";
 @import "./blocks/about.scss";
 @import "./blocks/article.scss";
 @import "./blocks/promo.scss";
+
+@media (max-width: 999.98px) {
+    html {
+        font-size: 10px;
+    }
+}
