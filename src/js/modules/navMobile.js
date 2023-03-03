@@ -24,6 +24,10 @@ $(function () {
         e.preventDefault();
         close();
     });
+
+    $(document).on("click", "#nav-mobile a", (e) => {
+        close();
+    });
 });
 
 export default {

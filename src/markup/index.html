@@ -15,14 +15,15 @@
 <div class="page__wrapper">
     <main>
         <!--  header -->
+        <div class="header__buffer"></div>
         <header class="header">
             <div class="header__center">
-                <nav class="nav-top">
+                <nav class="nav-top js-scroll-nav">
                     <ul>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Продукция</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li class="active"><a href="#">Реквизиты</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#goods">Продукция</a></li>
+                        <li><a href="#finance">Реквизиты</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
 
@@ -36,7 +37,7 @@
         <!-- /header -->
 
         <!-- promo -->
-        <article class="promo">
+        <article class="section promo" id="promo">
             <div class="promo__image"></div>
             <div class="promo__body">
                 <div class="page__center">
@@ -54,7 +55,7 @@
         <!-- promo -->
 
         <!-- about -->
-        <article class="about">
+        <article class="section about" id="about">
             <div class="page__center">
                 <div class="about__row">
                     <div class="about__left">
@@ -91,7 +92,7 @@
         <!-- /about -->
 
         <!--  goods -->
-        <article class="goods">
+        <article class="section goods" id="goods">
             <div class="page__center">
                 <div class="goods__row">
                     <div class="goods__left">
@@ -153,7 +154,7 @@
         <!-- /goods -->
 
         <!-- finance -->
-        <section class="finance">
+        <section class="section finance" id="finance">
             <div class="page__center">
                 <h2 class="page__h1 text-center">Реквизиты</h2>
 
@@ -185,7 +186,7 @@
         <!--/finance -->
 
         <!-- contacts -->
-        <article class="contacts">
+        <article class="section contacts" id="contacts">
             <div class="page__center">
                 <h2 class="page__h1 text-center">Контакты</h2>
                 <div class="contacts__desc">
@@ -209,11 +210,12 @@
         <!--  nav-mobile -->
         <section class="nav-mobile" id="nav-mobile">
             <div class="nav-mobile__window">
-                <nav class="nav-mobile__links">
+                <nav class="nav-mobile__links js-scroll-nav">
                     <ul>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Продукция</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#goods">Продукция</a></li>
+                        <li><a href="#finance">Реквизиты</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
 
