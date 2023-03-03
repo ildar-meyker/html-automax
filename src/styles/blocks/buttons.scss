@@ -48,7 +48,8 @@
 .btn-black {
     @include reset-btn;
     min-width: calc(250 / 20) + em;
-    background: linear-gradient(90deg, #000000 0%, #434343 100%);
+    background: linear-gradient(90deg, #000000, transparent) #434343;
+    background-size: 100% 100%;
     padding: 0 calc(30 / 20) + em;
     padding-bottom: calc(18 / 20) + em;
     padding-top: calc(14 / 20) + em;
@@ -61,7 +62,7 @@
     color: #ffffff;
 
     &:hover {
-        background-size: 120% auto;
+        background: #f37335;
     }
 }
 

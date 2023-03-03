@@ -187,7 +187,8 @@ a {
   border: 0;
   cursor: pointer;
   min-width: 12.5em;
-  background: linear-gradient(90deg, #000000 0%, #434343 100%);
+  background: linear-gradient(90deg, #000000, transparent) #434343;
+  background-size: 100% 100%;
   padding: 0 1.5em;
   padding-bottom: 0.9em;
   padding-top: 0.7em;
@@ -200,7 +201,7 @@ a {
   color: #ffffff;
 }
 .btn-black:hover {
-  background-size: 120% auto;
+  background: #f37335;
 }
 
 .btn-arrow {
