@@ -72,5 +72,17 @@
             transform: none;
             background-position: 75% 100%;
         }
+
+        &__body {
+            transform: translateY(-4vh);
+        }
+    }
+}
+
+@media (max-width: 359.98px) {
+    .promo {
+        &__logo {
+            width: 22rem;
+        }
     }
 }

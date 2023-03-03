@@ -723,6 +723,14 @@ a {
     transform: none;
     background-position: 75% 100%;
   }
+  .promo__body {
+    transform: translateY(-4vh);
+  }
+}
+@media (max-width: 359.98px) {
+  .promo__logo {
+    width: 22rem;
+  }
 }
 @media (max-width: 999.98px) {
   :root {
