@@ -581,6 +581,11 @@ a {
     transform: translateX(0);
   }
 }
+@media (max-width: 499.98px) {
+  .nav-mobile {
+    max-width: none;
+  }
+}
 .about {
   position: relative;
   background: linear-gradient(90deg, #000000 0%, #434343 100%);
