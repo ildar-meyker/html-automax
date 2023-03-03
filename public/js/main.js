@@ -55,14 +55,15 @@ $(function () {
 // simple function to use for callback in the intersection observer
 var changeNav = function changeNav(entries, observer) {
   entries.forEach(function (entry) {
-    // verify the element is intersecting
-    if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
+    // get id of the intersecting section
+    var id = entry.target.getAttribute("id");
+    var ratio = id === "goods" ? 0.01 : 0.55; // verify the element is intersecting
+
+    if (entry.isIntersecting && entry.intersectionRatio >= ratio) {
       // remove old active class
       Array.from(document.querySelectorAll(".js-scroll-nav .active")).forEach(function (el) {
         el.classList.remove("active");
-      }); // get id of the intersecting section
-
-      var id = entry.target.getAttribute("id"); // find matching link & add appropriate class
+      }); // find matching link & add appropriate class
 
       Array.from(document.querySelectorAll(".js-scroll-nav [href=\"#".concat(id, "\"]"))).forEach(function (el) {
         el.classList.add("active");
