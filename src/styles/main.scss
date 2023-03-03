@@ -54,13 +54,11 @@ a {
 @import "./blocks/promo.scss";
 
 @media (max-width: 999.98px) {
-    html {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 499.98px) {
     :root {
         --side-padding: 2rem;
+    }
+
+    html {
+        font-size: 10px;
     }
 }

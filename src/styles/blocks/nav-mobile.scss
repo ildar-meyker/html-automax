@@ -5,14 +5,10 @@
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     background: #1a1b1f;
-    max-width: 50rem;
-    transform: translateX(-100%);
-
-    &.active {
-        transform: translateX(0);
-    }
+    max-width: 35rem;
+    transform: translateX(100%);
 
     &__window {
         overflow: auto;
@@ -43,21 +39,12 @@
     &__btn-arrow {
         margin-top: 3.2rem;
     }
+}
 
-    &__btn-close {
-        @include reset-btn;
-        padding: 1rem;
-        font-size: 2.4rem;
-        line-height: 0;
-        position: absolute;
-        top: 0.4rem;
-        right: 1rem;
-        transform: scale(1.3);
-
-        .icon {
-            width: 1em;
-            height: 1em;
-            fill: #fff;
+@media (max-width: 999.98px) {
+    .nav-mobile {
+        &.active {
+            transform: translateX(0);
         }
     }
 }

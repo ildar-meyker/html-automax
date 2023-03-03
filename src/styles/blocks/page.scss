@@ -37,6 +37,10 @@
 
 @media (max-width: 999.98px) {
     .page {
+        &__center {
+            max-width: 600px;
+        }
+
         &__h1 {
             margin-bottom: calc(20 / 30) + em;
             font-size: 3rem;
