@@ -11,7 +11,7 @@
     }
 
     &__h1 {
-        margin-bottom: 3.8rem;
+        margin-bottom: calc(38 / 42) + em;
         font-family: "Arial Black";
         font-weight: 900;
         font-size: 4.2rem;
@@ -31,6 +31,15 @@
             transform: scaleY(-1);
             top: -1px;
             bottom: auto;
+        }
+    }
+}
+
+@media (max-width: 999.98px) {
+    .page {
+        &__h1 {
+            margin-bottom: calc(20 / 30) + em;
+            font-size: 3rem;
         }
     }
 }

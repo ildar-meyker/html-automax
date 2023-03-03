@@ -4,6 +4,23 @@
     background: linear-gradient(90deg, #000000 0%, #434343 100%);
 
     &__btn-burger {
-        // display: none;
+        display: none;
+    }
+}
+
+@media (max-width: 999.98px) {
+    .header {
+        background: #1a1b1f;
+        padding: 0.4rem 0;
+
+        &__center {
+            display: flex;
+        }
+
+        &__btn-burger {
+            display: block;
+            margin-left: auto;
+            margin-right: -1rem;
+        }
     }
 }

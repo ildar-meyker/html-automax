@@ -58,3 +58,9 @@ a {
         font-size: 10px;
     }
 }
+
+@media (max-width: 499.98px) {
+    :root {
+        --side-padding: 2rem;
+    }
+}

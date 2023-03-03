@@ -13,7 +13,7 @@
     i {
         transition: all 0.2s;
         display: block;
-        height: 3px;
+        height: 2px;
         background: #fff;
         border-radius: 2px;
         position: absolute;
@@ -47,9 +47,11 @@
 
 .btn-black {
     @include reset-btn;
-    min-width: 25rem;
+    min-width: calc(250 / 20) + em;
     background: linear-gradient(90deg, #000000 0%, #434343 100%);
-    padding: 1.4rem 3rem 1.8rem 3rem;
+    padding: 0 calc(30 / 20) + em;
+    padding-bottom: calc(18 / 20) + em;
+    padding-top: calc(14 / 20) + em;
     font-family: "Arial Black";
     font-weight: 900;
     font-size: 2rem;
@@ -64,4 +66,28 @@
 }
 
 .btn-arrow {
+    @include reset-btn;
+    display: inline-flex;
+    padding: 0.2rem 0.9rem;
+    border: 2px solid #f37335;
+    align-items: center;
+    font-family: "Arial Black";
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: calc(24 / 16);
+    color: #f37335;
+
+    .icon {
+        margin-left: calc(10 / 14) + em;
+        width: 1em;
+        height: 1em;
+        font-size: calc(14 / 16) + em;
+        fill: #f37335;
+    }
+}
+
+@media (max-width: 999.98px) {
+    .btn-black {
+        font-size: 1.5rem;
+    }
 }

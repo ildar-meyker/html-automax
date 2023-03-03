@@ -1,8 +1,17 @@
 .promo {
+    position: relative;
     padding-bottom: 20rem;
     padding-top: 22rem;
-    background: url(../img/promo/1.jpeg) no-repeat 100% 50% / auto 100%;
     text-align: center;
+
+    &__image {
+        @include fill;
+        background: url(../img/promo/1.jpeg) no-repeat 100% 100% / auto 100%;
+    }
+
+    &__body {
+        position: relative;
+    }
 
     &__header {
     }
@@ -27,5 +36,26 @@
 
     &__desc {
         margin-top: 12rem;
+    }
+}
+
+@media (max-width: 999.98px) {
+    .promo {
+        padding-top: 18.5rem;
+        padding-bottom: 24.3rem;
+        overflow: hidden;
+
+        &__image {
+            transform: translateX(11rem);
+            background-size: auto 95%;
+        }
+
+        &__logo {
+            max-width: 26rem;
+        }
+
+        &__desc {
+            margin-top: 2.5rem;
+        }
     }
 }

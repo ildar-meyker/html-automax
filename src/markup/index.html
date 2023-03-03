@@ -25,26 +25,30 @@
                         <li class="active"><a href="#">Реквизиты</a></li>
                     </ul>
                 </nav>
+
+                <div class="header__btn-burger">
+                    <button class="btn-burger js-nav-mobile-open">
+                        <span><i></i><i></i><i></i></span>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="header__btn-burger">
-            <button class="btn-burger js-nav-mobile-open">
-                <span><i></i><i></i><i></i></span>
-            </button>
         </div>
     </header>
     <!-- /header -->
 
     <!-- promo -->
     <article class="promo">
-        <div class="page__center">
-            <div class="promo__header">
-                <a href="#" class="promo__logo">
-                    <img src="img/promo/logo.png" alt="" />
-                </a>
-            </div>
-            <div class="promo__desc">
-                <a href="#" class="btn-black">Прайс</a>
+        <div class="promo__image"></div>
+        <div class="promo__body">
+            <div class="page__center">
+                <div class="promo__header">
+                    <a href="#" class="promo__logo">
+                        <img src="img/promo/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="promo__desc">
+                    <a href="#" class="btn-black">Прайс</a>
+                </div>
             </div>
         </div>
     </article>
@@ -56,16 +60,19 @@
             <div class="about__row">
                 <div class="about__left">
                     <section>
-                        <h2 class="page__h1">О компании</h2>
-                        <div class="article text-white">
-                            <p>
-                                Компания ООО «АвтоМакс» занимается оптовой
-                                продажей запчастей, деталей, узлов и аксессуаров
-                                для автомобилей и спецтехники, а также автохимии
-                                от популярных брендов.Мы предлагаем комфортные
-                                условия покупки для своих покупателей, а также
-                                своевременную поддержку.
-                            </p>
+                        <h2 class="page__h1 about__h1">О компании</h2>
+                        <div class="about__desc">
+                            <div class="article text-white">
+                                <p>
+                                    Компания ООО «АвтоМакс» занимается оптовой
+                                    продажей запчастей, деталей, узлов и
+                                    аксессуаров для автомобилей и спецтехники, а
+                                    также автохимии от популярных брендов.Мы
+                                    предлагаем комфортные условия покупки для
+                                    своих покупателей, а также своевременную
+                                    поддержку.
+                                </p>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -203,7 +210,12 @@
             </nav>
 
             <div class="nav-mobile__btn-arrow">
-                <a href="#" class="btn-arrow"> Реквизиты </a>
+                <a href="#" class="btn-arrow">
+                    <span>Реквизиты</span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
             </div>
         </div>
 
