@@ -26,7 +26,7 @@
 
 @media (max-width: 999.98px) {
     .about {
-        padding-top: 4.4rem;
+        padding-top: 4.5rem;
         padding-bottom: 4rem;
 
         &__row {
@@ -44,8 +44,7 @@
         }
 
         &__image {
-            max-width: 500px;
-            margin: 0 auto;
+            margin: 0;
         }
 
         &__h1 {

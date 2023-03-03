@@ -1,4 +1,6 @@
 .contacts {
+    position: relative;
+    z-index: 10;
     background: #fff;
     padding-top: 12.6rem;
     padding-bottom: 15.3rem;
@@ -8,5 +10,16 @@
         font-size: 2.5rem;
         line-height: 1.52;
         text-align: center;
+    }
+}
+
+@media (max-width: 999.98px) {
+    .contacts {
+        padding: 5rem 0;
+
+        &__desc {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
     }
 }

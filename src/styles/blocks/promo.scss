@@ -43,7 +43,6 @@
     .promo {
         padding-top: 18.5rem;
         padding-bottom: 24.3rem;
-        overflow: hidden;
 
         &__image {
             transform: translateX(11rem);
@@ -56,6 +55,15 @@
 
         &__desc {
             margin-top: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 499.98px) {
+    .promo {
+        &__image {
+            transform: none;
+            background-position: 75% 100%;
         }
     }
 }

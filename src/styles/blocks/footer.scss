@@ -9,3 +9,11 @@
     text-align: center;
     color: #ffffff;
 }
+
+@media (max-width: 999.98px) {
+    .footer {
+        padding-top: 4.5rem;
+        padding-bottom: 3.2rem;
+        font-size: 1.5rem;
+    }
+}
