@@ -3,10 +3,9 @@ const changeNav = (entries, observer) => {
     entries.forEach((entry) => {
         // get id of the intersecting section
         const id = entry.target.getAttribute("id");
-        const ratio = id === "goods" ? 0.01 : 0.55;
 
         // verify the element is intersecting
-        if (entry.isIntersecting && entry.intersectionRatio >= ratio) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
             // remove old active class
             Array.from(
                 document.querySelectorAll(".js-scroll-nav .active")
