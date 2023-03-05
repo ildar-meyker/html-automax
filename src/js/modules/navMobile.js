@@ -1,6 +1,10 @@
+const scrollbarWidth = require("scrollbarwidth");
+
 function open() {
     $("#nav-mobile, .js-nav-mobile-open").addClass("active");
-    $("body").addClass("page__locked");
+    $("body").addClass("page__locked").css({
+        "margin-right": scrollbarWidth(),
+    });
 }
 
 function toggle() {
@@ -10,8 +14,9 @@ function toggle() {
 
 function close() {
     $("#nav-mobile, .js-nav-mobile-open").removeClass("active");
-    $("body").removeClass("page__locked");
-    console.log(1);
+    $("body").removeClass("page__locked").css({
+        "margin-right": 0,
+    });
 }
 
 $(function () {
