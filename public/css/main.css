@@ -492,7 +492,6 @@ a {
 .header__btn-burger {
   display: none;
   position: relative;
-  z-index: 2000;
 }
 
 @media (max-width: 999.98px) {
