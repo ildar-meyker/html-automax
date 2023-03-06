@@ -61,19 +61,12 @@
 
 @media (max-width: 499.98px) {
     .promo {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-top: 18.5rem;
+        padding-bottom: 24.3rem;
 
         &__image {
             transform: none;
             background-position: 75% 100%;
-        }
-
-        &__body {
-            transform: translateY(-4vh);
         }
     }
 }
